@@ -46,23 +46,23 @@ footer{
     text-decoration: none;
     font-size: larger;
 }
-#navbelements a:hover, a:active{
+#navbelements a:hover{
     background-color: aliceblue;
     color: rgb(5, 5, 70);
     padding: 10px;
     border-radius: 5px;
-    text-shadow: 2px 2px violet;
+}
+.avatar{
+    box-sizing: border-box;
+    text-align: center;
 }
 #avatar{ /*AVATAR PICTURE STYLE WITH LINEAR ANIMATION*/
-    vertical-align: middle;
     animation: spin 10s linear infinite;
 }
 @keyframes spin{ /*ANIMATION PROPERTIES*/
-    0% {transform: rotate(0deg); margin-left:0%}
-    25% {transform: rotate(360deg); margin-left:50%}
-    50% {transform: rotate(-180deg); margin-left:99%}
-    75% {transform: rotate(360deg); margin-left:50%}
-    100% {transform: rotate(0eg); margin-right: 0px;}
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(360deg);}
+    100% {transform: rotate(0eg);}
 }
 table{
     border-collapse: collapse;
@@ -113,3 +113,6 @@ body {
 		background-position: 0% 50%;
 	}
 }
+.animate__animated.animate__bounce:hover {
+    --animate-duration: 2s;
+  }
