@@ -1,0 +1,115 @@
+html {
+	scroll-behavior: smooth;
+}
+header, main{
+    color: black;
+    vertical-align: middle;
+}
+body{
+    background: url("bg.jpg");
+    margin: 0;
+    height:100vh;
+    width: 100vw;
+    overflow: scroll;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+footer{
+    background-color: aliceblue;
+}
+#navbar{
+    height: 100px;
+    background-color: inherit;
+    margin-bottom: 20px;
+}
+#navbelements{
+    position:absolute;/* set the position of the navigation bar*/
+	top: 8%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 20px 0; /* Adding some padding */
+	display: flex; /* flex Set navigation bar horizontally using the  display tag*/
+	border-radius: 10px; /* add the border radius */
+}
+#navbelements li{
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: large;
+    list-style: none;
+	text-align: center;
+	display: block;
+    margin: 0px 10px;
+}
+#navbelements a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: larger;
+}
+#navbelements a:hover, a:active{
+    background-color: aliceblue;
+    color: rgb(5, 5, 70);
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 2px 2px violet;
+}
+#avatar{ /*AVATAR PICTURE STYLE WITH LINEAR ANIMATION*/
+    vertical-align: middle;
+    animation: spin 10s linear infinite;
+}
+@keyframes spin{ /*ANIMATION PROPERTIES*/
+    0% {transform: rotate(0deg); margin-left:0%}
+    25% {transform: rotate(360deg); margin-left:50%}
+    50% {transform: rotate(-180deg); margin-left:99%}
+    75% {transform: rotate(360deg); margin-left:50%}
+    100% {transform: rotate(0eg); margin-right: 0px;}
+}
+table{
+    border-collapse: collapse;
+    float: left;
+}
+td{
+    width: 20vw;
+    height: 2vw;
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding: 0px;
+}
+th{
+    width: 20vw;
+    height: 2vw;
+}
+tr:first-child{
+    text-align: right;
+}
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
